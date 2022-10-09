@@ -1,4 +1,5 @@
-// import java.util.Scanner;
+// Amadeo Valar
+// 11717299
 
 
 public class Einstiegsbeispiel {
