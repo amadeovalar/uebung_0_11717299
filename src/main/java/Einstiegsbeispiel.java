@@ -18,7 +18,7 @@ public class Einstiegsbeispiel {
   
     }
   
-    private static int getInnerProduct(int[] numbers, int[] numbers2) {
+    public static int getInnerProduct(int[] numbers, int[] numbers2) {
       int ergebnis = 0;
       for (int i = 0; i < numbers.length; i++) {
           ergebnis = ergebnis + numbers[i] * numbers2[i];
