@@ -20,6 +20,17 @@ public class EinstiegsbeispielTest {
     
         assertEquals(6, Einstiegsbeispiel.getInnerProduct(num, num2)); 
     }
+    @Test
+    public void arraysHaveDifferentLength()
+    {
+        int[] num = {-1,2,3,9};
+        int[] num2 = { -1, -2, 3 };
+    
+        assertThrows(IllegalArgumentException.class,
+                () -> {
+                    Einstiegsbeispiel.getInnerProduct(num, num2);
+                });
+    }
 
 
 
