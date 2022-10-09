@@ -1,7 +1,6 @@
 // Amadeo Valar
 // 11717299
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.Test;
 
 public class EinstiegsbeispielTest {
@@ -25,15 +24,23 @@ public class EinstiegsbeispielTest {
     @Test
     public void arraysHaveDifferentLength()
     {
-        int[] num = {-1,2,3,9};
+        int[] num = { -1, 2, 3, 9 };
         int[] num2 = { -1, -2, 3 };
-    
+
         assertThrows(IllegalArgumentException.class,
                 () -> {
                     Einstiegsbeispiel.getInnerProduct(num, num2);
                 });
     }
-
-
+    @Test
+    public void arrayMemberStartsWithZero()
+    {
+        int[] num = { -1, 2, 3, 9 };
+        int[] num2 = { -1, -2,02,0};
+    
+        assertEquals(3, Einstiegsbeispiel.getInnerProduct(num, num2)); 
+    }
+    
+    
 
 }
